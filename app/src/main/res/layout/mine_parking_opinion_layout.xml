@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBabiGray"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_my_parking_opinion"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="现象："
+        android:gravity="center_vertical"
+        android:textColor="@color/uuImportantText"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/et_my_parking_opnion_phenomenon"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@mipmap/index_info_bg"
+        android:ems="10"
+        android:gravity="top"
+        android:lines="20"
+        android:maxLines="20"
+        android:minLines="10"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_parking_opinion" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include4">
+
+        <TextView
+            android:id="@+id/tv_my_parking_opnion_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:text="车锁编号："
+            android:textColor="@color/uuImportantText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_my_parking_opnion_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:gravity="right|center_vertical"
+            android:hint="id"
+            android:inputType="textPersonName"
+            android:paddingEnd="8dp"
+            android:textColor="@color/uuImportantText"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="342dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_my_parking_opnion_photo"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="left|center_vertical"
+        android:paddingStart="8dp"
+        android:text="车锁图片"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_my_parking_opnion_phenomenon" />
+
+    <GridView
+        android:id="@+id/gv_my_parking_opnion_photo"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:numColumns="3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_parking_opnion_photo" />
+
+    <Button
+        android:id="@+id/btn_my_parking_opnion_ok"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_rectangle_rounded_blue"
+        android:text="确定"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/common_diy_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

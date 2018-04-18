@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBabiGray"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_my_control_lock"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:background="@color/colorWhite"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+    <Button
+        android:id="@+id/btn_my_control_up"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@mipmap/bg_white_radios"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingEnd="8dp"
+        android:text="升起"
+        android:textColor="@color/uuBuleBtn"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <Button
+        android:id="@+id/btn_my_control_down"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:background="@mipmap/bg_white_radios"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingEnd="8dp"
+        android:text="降下"
+        android:textColor="@color/uuSecondaryText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_my_control_up"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/btn_my_control_up"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        android:text="   温馨提示：  车锁只有在关闭共享下才能自用控制"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/bg_button_green" />
+
+        <TextView
+            android:id="@+id/tv_my_control_free"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="@dimen/values_16dp"
+            android:paddingLeft="8dp"
+            android:text="空闲"
+            android:textColor="@color/uuImportantText" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/bg_button_red_radius" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:layout_marginEnd="@dimen/values_16dp"
+            android:text="使用中"
+            android:gravity="center_vertical"
+            android:textColor="@color/uuImportantText" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/bg_button_dark_gray" />
+
+        <TextView
+            android:id="@+id/tv_my_control_inuse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:text="未共享"
+            android:gravity="center_vertical"
+            android:textColor="@color/uuImportantText" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/uuBuleTab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_my_control_search"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_bblue_left"
+            android:hint="搜索你的车位"
+            android:paddingStart="10dp"
+            android:textColor="@color/uu_hint_corlor_dark"
+            android:textColorHint="@color/uu_hint_corlor_dark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView19"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:text="共享"
+            android:textSize="12sp"
+            android:textColor="@color/uu_hint_corlor"
+            app:layout_constraintBottom_toBottomOf="@+id/et_my_control_search"
+            app:layout_constraintEnd_toStartOf="@+id/switch_my_control_close"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="@+id/et_my_control_search" />
+
+        <Switch
+            android:id="@+id/switch_my_control_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:checked="true"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            app:layout_constraintBottom_toBottomOf="@+id/et_my_control_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/et_my_control_search" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_bblue_right"
+            android:scaleType="fitCenter"
+            android:paddingStart="@dimen/values_16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_my_control_search"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/et_my_control_search"
+            app:layout_constraintTop_toTopOf="@+id/et_my_control_search"
+            app:srcCompat="@mipmap/index_search" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+</android.support.constraint.ConstraintLayout>

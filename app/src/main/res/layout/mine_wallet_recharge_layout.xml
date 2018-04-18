@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <include
+        layout="@layout/common_diy_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingStart="32dp"
+            android:text="充值金额"
+            android:textColor="@color/uu_hint_corlor_dark"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_my_wallet_recharge_200"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="200元"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_my_wallet_recharge_100"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="100元"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_my_wallet_recharge_50"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="50元"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_my_wallet_recharge_20"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="20元"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="选择支付方式"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:src="@mipmap/alipay" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="支付宝" />
+
+        <ImageView
+            android:id="@+id/image_my_wallet_recharge_alpay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="32dp"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingStart="@dimen/values_16dp"
+            android:paddingTop="6dp"
+            android:src="@mipmap/radioed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:src="@mipmap/wxpay" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="微信" />
+
+        <ImageView
+            android:id="@+id/image_my_wallet_recharge_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="32dp"
+            android:checked="false"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingStart="@dimen/values_16dp"
+            android:paddingTop="6dp"
+            android:src="@mipmap/radio" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_my_wallet_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_rectangle_rounded_blue_big"
+        android:text="充值"
+        android:textColor="@color/colorWhite" />
+    <TextView
+        android:id="@+id/btn_my_wallet_user_book"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="点击充值，代表您已经同意《用户协议》"/>
+
+</LinearLayout>

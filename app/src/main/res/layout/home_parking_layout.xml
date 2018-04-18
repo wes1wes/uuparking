@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="babi.com.uuparking.init.homePage.UUParkingActivity">
+
+    <ImageView
+        android:id="@+id/image_home_parking_photo"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@color/colorWhite"
+        android:scaleType="fitXY"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/parking_photo" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_time"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingEnd="16dp"
+        android:paddingStart="32dp"
+        android:text="价格/时间"
+        android:textColor="@color/uuImportantText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_type" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_location"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="车位地址："
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_home_parking_location_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_home_parking_photo" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_location_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_parking_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_home_parking_location"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_parking_location" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="地锁编号："
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_home_parking_id_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_order_id" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_id_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_parking_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_home_parking_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_parking_id" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_keep_time"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="15:00"
+        android:textColor="@color/uuBuleTab"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView34"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="--  车位保留时长  --"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_home_parking_time"
+        app:layout_constraintStart_toStartOf="@+id/tv_home_parking_time"
+        app:layout_constraintTop_toBottomOf="@+id/guideline6" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_type"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="车位类型："
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_home_parking_type_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_id" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_type_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_parking_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_home_parking_type"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_parking_type" />
+
+    <ListView
+        android:id="@+id/lv_home_parking_price"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorWhite"
+        android:maxHeight="120dp"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_time" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="订单编号："
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_home_parking_order_id_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_location" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_order_id_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingEnd="16dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_parking_order_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_home_parking_order_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_parking_order_id" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical|end"
+        android:text="点击打开车锁代表同意"
+        android:textColor="@color/uuSecondaryText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_parking_usable_protocol"
+        app:layout_constraintEnd_toStartOf="@+id/tv_home_parking_usable_protocol"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_keep_time" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_usable_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:text="《用户协议》"
+        android:textColor="@color/uuBuleBtn"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_keep_time" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/parking_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/uuBuleTab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_home_cancle_parking"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:drawableTop="@mipmap/cancel"
+            android:text="取消停车"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_home_no_parking"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_home_no_parking"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:drawableTop="@mipmap/fault"
+            android:text="无法停车"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_home_parking_nagitive"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_home_cancle_parking"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_home_parking_nagitive"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_bblue_left"
+            android:text="导航"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_home_start_parking"
+            app:layout_constraintEnd_toStartOf="@+id/btn_home_start_parking"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_home_no_parking"
+            app:layout_constraintTop_toTopOf="@+id/btn_home_start_parking" />
+
+        <Button
+            android:id="@+id/btn_home_start_parking"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_bblue_right"
+            android:gravity="center"
+            android:text="打开地锁"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_home_parking_nagitive"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

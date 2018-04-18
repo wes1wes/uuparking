@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/values_16dp"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_location"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:lines="1"
+        android:minWidth="520dp"
+        android:text="位置"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_share_time"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="共享时间："
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_apoint_parking_order_parking_info" />
+
+    <Button
+        android:id="@+id/btn_apoint_parking_order_sure"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rectangle_rounded_blue"
+        android:text="去停车"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_apoint_parking_order_parking_time_length" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_lock_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="编号："
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_apoint_parking_order_location" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_lock_id_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="right|center_vertical"
+        android:paddingEnd="8dp"
+        android:text="AGAA17121200001"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_apoint_parking_order_lock_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/tv_apoint_parking_order_lock_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_apoint_parking_order_lock_id" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_share_time_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="right|center_vertical"
+        android:paddingEnd="8dp"
+        android:text="**"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_apoint_parking_order_share_time"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintLeft_toRightOf="@+id/tv_apoint_parking_order_share_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_apoint_parking_order_share_time" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_parking_info"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="车位信息："
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_apoint_parking_order_lock_id" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_parking_info_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="right|center_vertical"
+        android:paddingEnd="8dp"
+        android:text="**"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_apoint_parking_order_parking_info"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/tv_apoint_parking_order_parking_info"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_apoint_parking_order_parking_info"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_parking_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="开始停车时间："
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_apoint_parking_order_parking_start_time_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_apoint_parking_order_parking_date" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_parking_time_length"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="停车时长（h）："
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_apoint_parking_order_parking_time_length_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_apoint_parking_order_parking_start_time" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_parking_start_time_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:text="09:00"
+        android:textColor="@color/uuOrangeBtn"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_apoint_parking_order_parking_start_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_apoint_parking_order_parking_start_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_apoint_parking_order_parking_start_time" />
+
+    <EditText
+        android:id="@+id/tv_apoint_parking_order_parking_time_length_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:gravity="center_vertical|end"
+        android:hint="请输入停车时长"
+        android:inputType="numberDecimal"
+        android:paddingEnd="8dp"
+        android:selectAllOnFocus="false"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_apoint_parking_order_parking_time_length"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_apoint_parking_order_parking_time_length"
+        app:layout_constraintTop_toTopOf="@+id/tv_apoint_parking_order_parking_time_length" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_parking_date"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="停车日期："
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_apoint_parking_order_parking_date_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv_apoint_parking_order_share_time" />
+
+    <TextView
+        android:id="@+id/tv_apoint_parking_order_parking_date_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical|end"
+        android:text="2018-4-4"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_apoint_parking_order_parking_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_apoint_parking_order_parking_date"
+        app:layout_constraintTop_toTopOf="@+id/tv_apoint_parking_order_parking_date" />
+
+    <ListView
+        android:id="@+id/lv_apoint_parking_order_share_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_apoint_parking_order_share_time" />
+</android.support.constraint.ConstraintLayout>

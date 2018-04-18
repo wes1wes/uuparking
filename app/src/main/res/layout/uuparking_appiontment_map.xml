@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_fragment_appiontment_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mv_fragment_appiontment_map"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+    </com.amap.api.maps.MapView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/tv_fragment_appiontment_search_scope_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_search_center"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/imagebtn_fragment_appiontment_search_scope_less"
+        app:layout_constraintEnd_toStartOf="@+id/imagebtn_fragment_appiontment_search_scope_add"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imagebtn_fragment_appiontment_search_scope_less"
+        app:layout_constraintTop_toTopOf="@+id/imagebtn_fragment_appiontment_search_scope_less" />
+
+    <TextView
+        android:id="@+id/tv_fragment_appiontment_search_scope"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="搜索范围(km)"
+        android:textColor="@color/uuImportantText"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imagebtn_fragment_appiontment_search_scope_add"
+        app:layout_constraintStart_toStartOf="@+id/imagebtn_fragment_appiontment_search_scope_less"
+        app:layout_constraintTop_toBottomOf="@+id/imagebtn_fragment_appiontment_search_scope_less" />
+
+    <ImageView
+        android:id="@+id/imagebtn_fragment_appiontment_search_scope_add"
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imagebtn_fragment_appiontment_search_scope_less"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_fragment_appiontment_search_scope_show"
+        app:layout_constraintTop_toTopOf="@+id/imagebtn_fragment_appiontment_search_scope_less"
+        app:srcCompat="@drawable/add" />
+
+    <ImageView
+        android:id="@+id/imagebtn_fragment_appiontment_search_scope_less"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/tv_fragment_appiontment_search_scope_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/less" />
+
+    <ImageView
+        android:id="@+id/imagebtn_fragment_appiontment_wait_time_less"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/tv_fragment_appiontment_wait_time"
+        app:layout_constraintEnd_toStartOf="@+id/tv_fragment_appiontment_wait_time_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:srcCompat="@drawable/less" />
+
+    <ImageView
+        android:id="@+id/imagebtn_fragment_appiontment_wait_time_add"
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imagebtn_fragment_appiontment_wait_time_less"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_fragment_appiontment_wait_time_show"
+        app:layout_constraintTop_toTopOf="@+id/imagebtn_fragment_appiontment_wait_time_less"
+        app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/tv_fragment_appiontment_wait_time_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_search_center"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/imagebtn_fragment_appiontment_wait_time_less"
+        app:layout_constraintEnd_toStartOf="@+id/imagebtn_fragment_appiontment_wait_time_add"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imagebtn_fragment_appiontment_wait_time_less"
+        app:layout_constraintTop_toTopOf="@+id/imagebtn_fragment_appiontment_wait_time_less" />
+
+    <TextView
+        android:id="@+id/tv_fragment_appiontment_wait_time"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="车位最高价(元)"
+        android:textColor="@color/uuImportantText"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagebtn_fragment_appiontment_search_scope_less"
+        app:layout_constraintEnd_toEndOf="@+id/imagebtn_fragment_appiontment_wait_time_add"
+        app:layout_constraintStart_toStartOf="@+id/imagebtn_fragment_appiontment_wait_time_less" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.47000003"
+        app:srcCompat="@mipmap/center_marker" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/uuBuleTab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/btn_fragment_appiontment_search_city"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_bblue"
+            android:gravity="center"
+            android:minWidth="60dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:text="上海"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/sv_appointment_map"
+            app:layout_constraintEnd_toStartOf="@+id/sv_appointment_map"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sv_appointment_map"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <AutoCompleteTextView
+            android:id="@+id/sv_appointment_map"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_bblue_left"
+            android:gravity="center_vertical"
+            android:hint="请输入前往地址"
+            android:paddingBottom="4dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/uu_hint_corlor_dark"
+            android:textColorHint="@color/uu_hint_corlor_dark"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView16"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_fragment_appiontment_search_city"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_bblue_right"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/sv_appointment_map"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sv_appointment_map"
+            app:layout_constraintTop_toTopOf="@+id/sv_appointment_map"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/search_bar_icon_normal" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

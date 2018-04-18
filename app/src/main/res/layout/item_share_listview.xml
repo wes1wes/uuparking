@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_mine_parking_management_pice_show"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="20"
+        android:textColor="@color/uuOrangeBtn"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_mine_parking_management_time_show"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_mine_parking_management_time_show"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:gravity="center"
+        android:text="9:00-12:00"
+        android:textColor="@color/uuOrangeBtn"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_mine_parking_management_pice_show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_mine_parking_management_pice_show"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_mine_parking_management_pice_show" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="价格(元/时）"
+        android:textColor="@color/uuImportantText"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_item_mine_parking_management_pice_show"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_mine_parking_management_pice_show"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_mine_parking_management_pice_show"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="时间段"
+        android:textColor="@color/uuImportantText"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView31"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_mine_parking_management_time_show"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_mine_parking_management_time_show"
+        app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+</android.support.constraint.ConstraintLayout>

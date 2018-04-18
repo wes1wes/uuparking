@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/image_guid_view4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+       />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_shape"
+        android:text="点击进入"
+        android:textColor="@color/uuBuleTab"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+</FrameLayout>

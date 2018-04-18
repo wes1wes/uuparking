@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBabiGray">
+    <include layout="@layout/common_diy_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_my_person_phone_numer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="3"
+            android:hint="输入手机号"
+            android:textSize="14sp"
+            android:background="@mipmap/login_bg_white_small"
+            android:gravity="center_vertical"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_my_person_phone_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:hint="输入验证码"
+            android:textSize="14sp"
+            android:background="@mipmap/login_bg_white_small"
+            android:gravity="center_vertical"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_my_person_get_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="3"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bg_button_blue_radius"
+            android:text="获取验证码" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_my_person_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/bg_button_blue_radius"
+        android:gravity="center"
+        android:text="确定" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

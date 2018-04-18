@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5979ac</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#141414</color>
+    <color name="uuBuleBtn">#63a1ff</color>
+    <color name="uuBuleTab">#11242e</color>
+    <color name="uuOrangeBtn">#ff6600</color>
+    <color name="uuDividingLineBg">#f2f2f2</color>
+    <color name="uuDividingLine">#eaeaea</color>
+    <color name="uuImportantText">#4c4b4b</color>
+    <color name="uuSecondaryText">#808080</color>
+    <color name="uuAuxiliaryBlueBg">#ccebff</color>
+    <color name="uuAuxiliaryYellowBg">#ffeac6</color>
+    <color name="colorBabiRed">#c22826</color>
+    <color name="colorBabiGreen">#6bc235</color>
+    <color name="colorBabiYellow">#fada8d</color>
+    <color name="colorBabiGray">#f0f0f0</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBabiButtonGray">#979797</color>
+    <color name="uu_hint_corlor">#c4c4c4</color>
+    <color name="uu_hint_corlor_dark">#8a8a8a</color>
+</resources>

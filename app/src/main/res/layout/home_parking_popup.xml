@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/tv_home_location"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:lines="1"
+        android:text="位置"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_home_unitprice"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:text="价格(元/时)："
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_lock_id_show" />
+
+    <TextView
+        android:id="@+id/tv_home_time"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:text="共享时间："
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_unitprice" />
+
+    <Button
+        android:id="@+id/btn_home_sure"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_rectangle_rounded_blue"
+        android:text="去停车"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_message" />
+
+    <TextView
+        android:id="@+id/tv_home_lock_id"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:text="编号："
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_location" />
+
+    <TextView
+        android:id="@+id/tv_home_lock_id_show"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="right|center_vertical"
+        android:text="AGAA17121200001"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_lock_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/tv_home_lock_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_lock_id" />
+
+    <TextView
+        android:id="@+id/tv_home_unitprice_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="right|center_vertical"
+        android:text="10"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_unitprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_home_unitprice"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_unitprice"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_home_time_show"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_time"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintLeft_toRightOf="@+id/tv_home_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_time" />
+
+    <TextView
+        android:id="@+id/tv_home_message"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:text="车位信息："
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_time" />
+
+    <TextView
+        android:id="@+id/tv_home_message_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_message"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/tv_home_message"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_message"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

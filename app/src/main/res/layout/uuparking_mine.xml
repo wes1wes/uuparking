@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_mine_park"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/background_light"
+                android:drawableEnd="@mipmap/right_enter"
+                android:gravity="center_vertical"
+                android:paddingEnd="32dp"
+                android:paddingStart="8dp"
+                android:text="车位管理"
+                android:textColor="@color/uuImportantText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline12"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mine_appointment_history" />
+
+            <TextView
+                android:id="@+id/tv_mine_credit_points"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:drawableEnd="@mipmap/right_enter"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingEnd="32dp"
+                android:paddingStart="8dp"
+                android:paddingTop="5dp"
+                android:text="信用分"
+                android:textColor="@color/uuImportantText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline12"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mine_money" />
+
+            <TextView
+                android:id="@+id/tv_mine_add_parking"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/background_light"
+                android:drawableEnd="@mipmap/right_enter"
+                android:gravity="center_vertical"
+                android:paddingEnd="32dp"
+                android:paddingStart="8dp"
+                android:text="申请添加车位"
+                android:textColor="@color/uuImportantText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline12"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mine_eanings" />
+
+            <TextView
+                android:id="@+id/tv_mine_money"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@android:color/background_light"
+                android:drawableEnd="@mipmap/right_enter"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingEnd="32dp"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                android:text="钱包"
+                android:textColor="@color/uuImportantText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline12"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mine_phone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_mine_photo"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:background="@color/uuBuleTab"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:src="@mipmap/uuparking"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_mine_name"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/uuBuleTab"
+                android:gravity="bottom"
+                android:paddingBottom="6dp"
+                android:text="昵称"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_mine_phone"
+                app:layout_constraintEnd_toStartOf="@+id/image_mine_enter"
+                app:layout_constraintStart_toEndOf="@+id/image_mine_photo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_mine_history"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/background_light"
+                android:drawableEnd="@mipmap/right_enter"
+                android:gravity="center_vertical"
+                android:paddingEnd="32dp"
+                android:paddingStart="8dp"
+                android:text="停车历史"
+                android:textColor="@color/uuImportantText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/guideline12"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mine_news" />
+
+            <TextView
+                android:id="@+id/tv_mine_eanings"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorWhite"
+                android:drawableRight="@mipmap/right_enter"
+                android:gravity="center_vertical"
+                android:paddingEnd="32dp"
+                android:paddingStart="8dp"
+                android:text="车位收益"
+                android:textColor="@color/uuImportantText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/guideline12"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mine_park" />
+
+            <TextView
+                android:id="@+id/tv_mine_appointment_history"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorWhite"
+                android:drawableRight="@mipmap/right_enter"
+                android:gravity="center_vertical"
+                android:paddingEnd="32dp"
+                android:paddingStart="8dp"
+                android:text="预约记录"
+                android:textColor="@color/uuImportantText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline12"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mine_history" />
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorWhite"
+                android:paddingBottom="12dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_mine_credit_points"
+                app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_mine_credit_points"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@mipmap/branch" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorWhite"
+                android:paddingBottom="12dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_mine_money"
+                app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_mine_money"
+                app:srcCompat="@mipmap/wallet" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorWhite"
+                android:paddingBottom="12dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_mine_appointment_history"
+                app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_mine_history"
+                app:srcCompat="@mipmap/park" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorWhite"
+                android:paddingBottom="12dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_mine_appointment_history"
+                app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_mine_appointment_history"
+                app:srcCompat="@mipmap/appointment" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorWhite"
+                android:paddingBottom="12dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="14dp"
+                android:paddingTop="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_mine_eanings"
+                app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_mine_eanings"
+                app:srcCompat="@mipmap/earning" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorWhite"
+                android:paddingBottom="12dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_mine_park"
+                app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_mine_park"
+                app:srcCompat="@mipmap/parking_management" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorWhite"
+                android:paddingBottom="12dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_mine_add_parking"
+                app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_mine_add_parking"
+                app:srcCompat="@mipmap/apply" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="56dp" />
+
+            <TextView
+                android:id="@+id/tv_mine_phone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/uuBuleTab"
+                android:paddingTop="6dp"
+                android:text="183*******4"
+                android:textColor="@color/uu_hint_corlor"
+                app:layout_constraintBottom_toBottomOf="@+id/image_mine_photo"
+                app:layout_constraintEnd_toStartOf="@+id/image_mine_enter"
+                app:layout_constraintStart_toEndOf="@+id/image_mine_photo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mine_name" />
+
+            <ImageView
+                android:id="@+id/image_mine_enter"
+                android:layout_width="46dp"
+                android:layout_height="0dp"
+                android:background="@color/uuBuleTab"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_mine_photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_mine_photo"
+                app:srcCompat="@mipmap/right_arrow_top" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorWhite"
+                android:paddingBottom="12dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_mine_news"
+                app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_mine_news"
+                app:srcCompat="@mipmap/news" />
+
+            <TextView
+                android:id="@+id/tv_mine_news"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorWhite"
+                android:drawableEnd="@mipmap/right_enter"
+                android:gravity="center_vertical"
+                android:paddingEnd="32dp"
+                android:paddingStart="8dp"
+                android:text="消息"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline12"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mine_credit_points" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

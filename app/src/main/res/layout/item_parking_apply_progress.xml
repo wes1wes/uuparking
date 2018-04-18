@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/tv_item_parking_apply_id"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|left"
+        android:paddingStart="16dp"
+        android:text="id"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_parking_apply_create_time" />
+
+    <TextView
+        android:id="@+id/tv_item_parking_apply_number"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|left"
+        android:paddingStart="16dp"
+        android:text="number"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_parking_apply_update_time" />
+
+    <TextView
+        android:id="@+id/tv_item_parking_apply_create_time"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical|left"
+        android:text="创建"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_parking_apply_update_time"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|left"
+        android:paddingStart="16dp"
+        android:text="更新"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_parking_apply_id" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="申请单号"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_parking_apply_id"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_parking_apply_id"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_parking_apply_create_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_parking_apply_id" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="进度"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_parking_apply_update_time"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_parking_apply_create_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_parking_apply_update_time" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="申请数量"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_parking_apply_number"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_parking_apply_number"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_parking_apply_number" />
+
+</android.support.constraint.ConstraintLayout>

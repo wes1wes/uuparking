@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBabiGray"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/common_diy_toolbar" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_apply_linkman"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingEnd="32dp"
+                android:paddingStart="32dp">
+
+                <TextView
+                    android:id="@+id/tv_my_apply_linkman"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="联系人"
+                    android:textColor="@color/uuImportantText"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_my_apply_linkman"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:hint="联系人姓名"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_apply_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingEnd="32dp"
+                android:paddingStart="32dp">
+
+                <TextView
+                    android:id="@+id/tv_my_apply_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="手机号"
+                    android:textColor="@color/uuImportantText"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_my_apply_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="center|right"
+                    android:hint="联系人手机号"
+                    android:inputType="phone|number"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_apply_location"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingEnd="32dp"
+                android:paddingStart="32dp">
+
+                <TextView
+                    android:id="@+id/tv_my_apply_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="所在地区"
+                    android:textColor="@color/uuImportantText"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/item_city_name_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center|right"
+                    android:text="选所在区"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_apply_person_location"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingEnd="32dp"
+                android:paddingStart="32dp">
+
+                <TextView
+                    android:id="@+id/tv_my_apply_person_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="居住地址"
+                    android:textColor="@color/uuImportantText"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_my_apply_person_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="center|end"
+                    android:hint="**小区**弄**号"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxEms="18"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_apply_parking_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:paddingEnd="32dp"
+                android:paddingStart="32dp">
+
+                <TextView
+                    android:id="@+id/tv_my_apply_parking_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="申请数量"
+                    android:textColor="@color/uuImportantText"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_my_apply_parking_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="center|end"
+                    android:hint="如“1”"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxEms="18"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_my_apply_detailed_location"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@color/colorWhite"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_my_apply_detailed_location"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--android:text="@string/parking_address"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="18sp" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/et_my_apply_detailed_location"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_weight="3"-->
+            <!--android:background="@null"-->
+            <!--android:gravity="center|end"-->
+            <!--android:hint="街道、小区、车位号"-->
+            <!--android:inputType="text"-->
+            <!--android:lines="1"-->
+            <!--android:maxEms="18"-->
+            <!--android:textSize="14sp" />-->
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:id="@+id/btn_my_apply_uploading"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingEnd="32dp"
+                android:paddingStart="32dp"
+                android:text="@string/upload_photo"
+                android:textColor="@color/uuImportantText"
+                android:textSize="18sp" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorWhite">
+
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:text="车位相关证明（如多个车位只需上传一个）"
+                    android:textColor="@color/uuImportantText"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.474"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_my_apply_idcard_back" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:text="身份证正反面"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_my_apply_idcard_front"
+                    android:layout_width="100dp"
+                    android:layout_height="68dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:background="@drawable/bg_button_dark_gray"
+                    android:scaleType="center"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27"
+                    app:srcCompat="@mipmap/phoyo" />
+
+                <ImageView
+                    android:id="@+id/image_my_apply_idcard_back"
+                    android:layout_width="100dp"
+                    android:layout_height="67dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:background="@drawable/bg_button_dark_gray"
+                    android:scaleType="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/image_my_apply_idcard_front"
+                    app:srcCompat="@mipmap/phoyo" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <ImageView
+                    android:id="@+id/image_my_apply_prove_one"
+                    android:layout_width="100dp"
+                    android:layout_height="67dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_button_dark_gray"
+                    android:scaleType="center"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    app:srcCompat="@mipmap/phoyo" />
+
+                <ImageView
+                    android:id="@+id/image_my_apply_prove_two"
+                    android:layout_width="100dp"
+                    android:layout_height="67dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_button_dark_gray"
+                    android:scaleType="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    app:srcCompat="@mipmap/phoyo" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_my_apply"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_rectangle_rounded_blue"
+                android:text="@string/tv_apply"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:text="工作人员将在3个工作日内与您取得联系，请保持手机畅通"
+                android:textColor="@color/uu_hint_corlor_dark"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

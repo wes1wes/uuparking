@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/home"
+        android:title="@string/title_home"
+        />
+
+    <item
+        android:id="@+id/navigation_appiontment"
+        android:icon="@mipmap/reservation_parking"
+        android:title="@string/title_appiontment" />
+
+    <item
+        android:id="@+id/navigation_control"
+        android:icon="@mipmap/my_carpark"
+        android:title="@string/title_control" />
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@mipmap/personal_center"
+        android:title="@string/title_mine" />
+
+</menu>

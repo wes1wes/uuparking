@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rectangle_rounded_transparent">
+
+    <Button
+        android:id="@+id/btn_parking_pop_call_lock"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white_bg"
+        android:text="车位响铃"
+        android:textColor="@color/uuBuleBtn"
+        app:layout_constraintBottom_toTopOf="@+id/btn_parking_pop_lock_malfunction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_parking_pop_lock_malfunction"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/white_bg"
+        android:text="车锁故障"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toTopOf="@+id/btn_parking_pop_link_uu"
+        app:layout_constraintEnd_toEndOf="@+id/btn_parking_pop_call_lock"
+        app:layout_constraintStart_toStartOf="@+id/btn_parking_pop_call_lock" />
+
+    <Button
+        android:id="@+id/btn_parking_pop_cancle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/white_bg"
+        android:text="取消"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_parking_pop_call_lock"
+        app:layout_constraintStart_toStartOf="@+id/btn_parking_pop_call_lock" />
+
+    <Button
+        android:id="@+id/btn_parking_pop_link_uu"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/white_bg"
+        android:text="联系客服"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toTopOf="@+id/btn_parking_pop_cancle"
+        app:layout_constraintEnd_toEndOf="@+id/btn_parking_pop_call_lock"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_parking_pop_call_lock" />
+</android.support.constraint.ConstraintLayout>

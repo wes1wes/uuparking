@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/tv_earning_show_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="06:00"
+        android:textColor="@color/uuImportantText"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_earning_order_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="id"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_earning_carpark_id"
+        app:layout_constraintStart_toEndOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+
+    <TextView
+        android:id="@+id/tv_earning_carpark_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp"
+        android:text="车位编号"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/tv_earning_show_time" />
+
+
+    <TextView
+        android:id="@+id/tv_earning_money"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="收益"
+        android:textColor="@color/uuOrangeBtn"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView40"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_earning_order_id" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="收益单号："
+        android:textColor="@color/uuImportantText"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_earning_order_id"
+        app:layout_constraintStart_toStartOf="@+id/textView35"
+        app:layout_constraintTop_toTopOf="@+id/tv_earning_order_id"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:gravity="center_vertical"
+        android:text="车锁编号："
+        android:textColor="@color/uuImportantText"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_earning_carpark_id"
+        app:layout_constraintEnd_toStartOf="@+id/tv_earning_carpark_id"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_earning_carpark_id" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:text="收益："
+        android:textColor="@color/uuImportantText"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_earning_money"
+        app:layout_constraintEnd_toStartOf="@+id/tv_earning_money"
+        app:layout_constraintTop_toTopOf="@+id/tv_earning_money"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:text="元"
+        android:textColor="@color/uuImportantText"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_earning_money"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_earning_money" />
+
+
+</android.support.constraint.ConstraintLayout>

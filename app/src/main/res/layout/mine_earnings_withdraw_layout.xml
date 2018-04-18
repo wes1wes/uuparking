@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/common_diy_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+       android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00"
+            android:gravity="right|center_vertical"
+            android:paddingEnd="8dp"
+            android:text="收益："
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_my_wallet_withdraw_come_show"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.7"
+            android:gravity="center"
+            android:inputType="number"
+            android:paddingStart="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_my_wallet_withdraw_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.8"
+            android:background="@mipmap/index_info_bg1"
+            android:gravity="center"
+            android:text="全部提现"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="2dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:paddingEnd="8dp"
+        android:text="金额："
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_my_wallet_withdraw_money"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="2.5"
+        android:background="@drawable/bg_edittext_focused"
+        android:gravity="left|center_vertical"
+        android:inputType="number"
+        android:lines="1"
+        android:paddingStart="8dp"
+        android:textSize="16sp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:paddingEnd="8dp"
+            android:text="银行卡号："
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_my_wallet_withdraw_ali"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/bg_edittext_focused"
+            android:gravity="left|center_vertical"
+            android:lines="1"
+            android:paddingStart="8dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:paddingEnd="8dp"
+            android:text="开户支行："
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_my_wallet_withdraw_band"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/bg_edittext_focused"
+            android:gravity="left|center_vertical"
+            android:lines="1"
+            android:paddingStart="8dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:lines="1"
+        android:text="请确认银行卡号、开户银行是否正确"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <Button
+        android:id="@+id/btn_my_wallet_withdraw_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_button_blue_radius"
+        android:text="确定"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:lines="2"
+        android:text="本公司将会在1-3个工作日内，将钱转到您的银行卡中" />
+
+
+</LinearLayout>

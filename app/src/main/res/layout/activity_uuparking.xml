@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="babi.com.uuparking.init.homePage.UUParkingActivity">
+
+    <babi.com.uuparking.init.utils.DIYview.NoSlidingViewPaper
+        android:id="@+id/nosliding_vp_main_uuparking_diy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></babi.com.uuparking.init.utils.DIYview.NoSlidingViewPaper>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bnv_main_uuparking_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        app:itemTextColor="@color/uu_hint_corlor_dark"
+        app:menu="@menu/navigation" />
+    <!--android:background="?android:attr/windowBackground"-->
+
+
+</LinearLayout>

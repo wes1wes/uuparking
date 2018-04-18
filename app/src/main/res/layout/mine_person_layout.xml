@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBabiGray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include12"
+        layout="@layout/common_diy_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_my_person_user_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="头像"
+        android:textColor="@color/uu_hint_corlor_dark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circlime_user_photo"
+        app:layout_constraintEnd_toStartOf="@+id/circlime_user_photo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/include12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/circlime_user_photo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circlime_user_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:background="@color/colorWhite"
+        android:paddingBottom="4dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="3dp"
+        android:src="@mipmap/uuparking"
+        app:layout_constraintEnd_toStartOf="@+id/imag_user_photo_in"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_user_photo"
+        app:layout_constraintTop_toBottomOf="@+id/include12" />
+
+    <TextView
+        android:id="@+id/tv_my_person_name"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="昵称"
+        android:textColor="@color/uu_hint_corlor_dark"
+        app:layout_constraintEnd_toStartOf="@+id/tv_my_person_name_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_person_user_photo" />
+
+    <TextView
+        android:id="@+id/tv_my_person_name_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="right|center"
+        android:paddingEnd="16dp"
+        android:text="18*****465"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_name"
+        app:layout_constraintEnd_toStartOf="@+id/image_my_person_name_in"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_name" />
+
+    <TextView
+        android:id="@+id/tv_my_person_identification"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="实名认证"
+        android:textColor="@color/uu_hint_corlor_dark"
+        app:layout_constraintEnd_toStartOf="@+id/tv_my_person_identification_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_person_name" />
+
+    <TextView
+        android:id="@+id/tv_my_person_identification_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="right|center"
+        android:paddingEnd="16dp"
+        android:text="未认证"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_identification"
+        app:layout_constraintEnd_toStartOf="@+id/image_my_person_identification_in"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_identification"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_identification" />
+
+    <TextView
+        android:id="@+id/tv_my_person_bindwx"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="微信"
+        android:textColor="@color/uu_hint_corlor_dark"
+        app:layout_constraintEnd_toStartOf="@+id/tv_my_person_bindwx_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_person_phone_number" />
+
+    <TextView
+        android:id="@+id/tv_my_person_bindwx_show"
+        android:layout_width="191dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:gravity="right|center"
+        android:paddingEnd="16dp"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_bindwx"
+        app:layout_constraintEnd_toStartOf="@+id/imageView23"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_bindwx"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_bindwx" />
+
+    <TextView
+        android:id="@+id/tv_my_person_phone_number"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="手机号"
+        android:textColor="@color/uu_hint_corlor_dark"
+        app:layout_constraintEnd_toStartOf="@+id/tv_my_person_phone_number_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_person_withdraw_pwd" />
+
+    <TextView
+        android:id="@+id/tv_my_person_phone_number_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="right|center"
+        android:paddingEnd="16dp"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_phone_number"
+        app:layout_constraintEnd_toStartOf="@+id/image_my_person_phone_number_in"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_phone_number"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_phone_number" />
+
+    <TextView
+        android:id="@+id/tv_my_person_withdraw_pwd"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:drawableEnd="@mipmap/right_enter"
+        android:gravity="center_vertical"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"
+        android:text="支付提现密码"
+        android:textColor="@color/uu_hint_corlor_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_person_identification" />
+
+    <Button
+        android:id="@+id/btn_my_person_log_off"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/bg_rectangle_rounded_blue"
+        android:gravity="center"
+        android:text="注销登录"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imag_user_photo_in"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circlime_user_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/circlime_user_photo"
+        app:srcCompat="@mipmap/right_enter" />
+
+    <ImageView
+        android:id="@+id/image_my_person_name_in"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_name_show"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_name"
+        app:srcCompat="@mipmap/right_enter" />
+
+    <ImageView
+        android:id="@+id/image_my_person_identification_in"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_identification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_identification_show"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_identification"
+        app:srcCompat="@mipmap/right_enter" />
+
+    <ImageView
+        android:id="@+id/image_my_person_phone_number_in"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_phone_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_phone_number_show"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_phone_number"
+        app:srcCompat="@mipmap/right_enter" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_bindwx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_bindwx_show"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_bindwx"
+        app:srcCompat="@mipmap/right_enter" />
+
+    <TextView
+        android:id="@+id/tv_my_person_aboutus"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="关于我们"
+        android:textColor="@color/uu_hint_corlor_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/img_my_person_aboutus_in"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_person_bindwx" />
+
+    <ImageView
+        android:id="@+id/img_my_person_aboutus_in"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:paddingEnd="32dp"
+        android:src="@mipmap/right_enter"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_aboutus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_aboutus"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_aboutus" />
+
+    <TextView
+        android:id="@+id/tv_my_person_opinion"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="意见反馈"
+        android:textColor="@color/uu_hint_corlor_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/image_my_person_opinion_in"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_person_aboutus" />
+
+    <ImageView
+        android:id="@+id/image_my_person_opinion_in"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorWhite"
+        android:paddingEnd="32dp"
+        android:src="@mipmap/right_enter"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_opinion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_opinion"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_opinion" />
+
+    <ImageView
+        android:id="@+id/image_my_person_make_instructions_in"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_person_make_instructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_my_person_make_instructions"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_person_make_instructions"
+        app:srcCompat="@mipmap/right_enter" />
+
+    <TextView
+        android:id="@+id/tv_my_person_make_instructions"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="使用指南"
+        android:textColor="@color/uu_hint_corlor_dark"
+        app:layout_constraintEnd_toStartOf="@+id/image_my_person_make_instructions_in"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_person_opinion" />
+</android.support.constraint.ConstraintLayout>

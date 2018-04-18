@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_appoint_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_white_left"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="预约单号"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_appoint_history_details_appoint_id_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include13" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_appoint_id_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_white_right"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:text="****"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_appoint_history_details_appoint_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_appoint_history_details_appoint_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_appoint_history_details_appoint_id" />
+
+    <include
+        android:id="@+id/include13"
+        layout="@layout/common_diy_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_mine_appoint_history_details_start"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_button_blue_radius"
+        android:text="去停车"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_mine_appoint_history_details_cancle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_mine_appoint_history_details_cancle"
+        app:layout_constraintTop_toTopOf="@+id/btn_mine_appoint_history_details_cancle" />
+
+    <Button
+        android:id="@+id/btn_mine_appoint_history_details_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_button_blue_radius"
+        android:text="取消预约"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mine_appoint_history_details_start"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_lock_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_white_left"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="地锁编号"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_appoint_history_details_lock_id_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_appoint_history_details_appoint_id" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_location"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_white_left"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="车位地址"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_appoint_history_details_location_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_appoint_history_details_lock_id" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_lock_id_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_white_right"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:text="***"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_appoint_history_details_lock_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_appoint_history_details_lock_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_appoint_history_details_lock_id" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_price"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_white_left"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="价格(元/时)"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_appoint_history_details_price_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_appoint_history_details_carpark_info" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_carpark_info"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_white_left"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="车位信息"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_appoint_history_details_carpark_info_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_appoint_history_details_location" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_white_left"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="开始停车时间"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_appoint_history_details_start_time_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_appoint_history_details_price" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_time_length"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_white_left"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="停车时长(h)"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_appoint_history_details_time_length_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_appoint_history_details_start_time" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_location_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_white_right"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:text="**区**号"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_appoint_history_details_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_appoint_history_details_location"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_appoint_history_details_location" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_price_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_white_right"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:text="***"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_appoint_history_details_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_appoint_history_details_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_appoint_history_details_price" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_start_time_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_white_right"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:text="**:**"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_appoint_history_details_start_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_appoint_history_details_start_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_appoint_history_details_start_time" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_time_length_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_white_right"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:text="**"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_appoint_history_details_time_length"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_appoint_history_details_time_length"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_appoint_history_details_time_length"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_mine_appoint_history_details_carpark_info_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_white_right"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:text="***"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_appoint_history_details_carpark_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_appoint_history_details_carpark_info"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_appoint_history_details_carpark_info" />
+</android.support.constraint.ConstraintLayout>

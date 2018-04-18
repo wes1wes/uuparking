@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBabiGray"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_diy_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/uuBuleBtn"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_my_wallet_balance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:paddingStart="32dp"
+            android:text="账户余额(元)"
+            android:textColor="@color/colorBabiGray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_my_wallet_money"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+
+            android:gravity="center_vertical"
+            android:paddingStart="32dp"
+            android:text="0.00"
+            android:textColor="@color/colorWhite"
+            android:textSize="38sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/image_my_wallet_recharge"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@mipmap/recharge"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorWhite"
+            android:scaleType="centerInside"
+            android:paddingStart="32dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_my_wallet_recharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:text="充值"
+            android:textColor="@color/uuImportantText"
+            android:textSize="12sp" />
+        <ImageView
+            android:id="@+id/image_my_wallet_apply"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:paddingStart="32dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorWhite"
+            android:scaleType="centerInside"
+
+            android:src="@mipmap/withdrawals"/>
+
+        <TextView
+            android:id="@+id/tv_my_wallet_apply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:text="提现"
+            android:textColor="@color/uuImportantText"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_my_wallet_all_details"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:drawableEnd="@mipmap/right_enter"
+        android:gravity="center_vertical"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"
+        android:text="交易明细"
+        android:textColor="@color/uuImportantText" />
+
+    <ListView
+        android:id="@+id/lv_my_wallet_cost_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"
+        android:visibility="invisible" />
+
+
+</LinearLayout>

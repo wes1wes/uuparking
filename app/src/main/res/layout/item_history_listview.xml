@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingRight="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/checked" />
+
+    <TextView
+        android:id="@+id/show_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/image"
+        android:text="06:00"
+        android:textColor="@color/uuSecondaryText"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/show_time"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toRightOf="@+id/image">
+
+        <TextView
+            android:id="@+id/location_history"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="位置"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/uuImportantText"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/lock_ll_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_history"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:src="@mipmap/time" />
+
+            <TextView
+                android:id="@+id/time_history"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="时长"
+                android:textSize="14sp"
+                android:textColor="@color/uuImportantText" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:src="@mipmap/money_history" />
+
+            <TextView
+                android:id="@+id/consume_history"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="花费"
+                android:textColor="@color/uuImportantText"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cost_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/image"
+        android:layout_marginEnd="32dp"
+        android:maxWidth="60dp"
+        android:textColor="@color/uuImportantText"
+        android:text="状态" />
+
+</RelativeLayout>

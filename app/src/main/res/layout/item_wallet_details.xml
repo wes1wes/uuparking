@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_item_wallet_bill_details_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:text="tixian"
+            android:textColor="@color/uuImportantText"
+            android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="@dimen/values_16dp"
+        android:paddingEnd="@dimen/values_16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="订单号："
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_item_wallet_bill_details_order_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="edu"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="@dimen/values_16dp"
+        android:paddingEnd="@dimen/values_16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_wallet_bill_details_payway"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="tixian"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+        <!--<TextView-->
+            <!--android:id="@+id/tv_item_wallet_bill_details_type"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="tixian"-->
+            <!--android:textColor="@color/colorCarBule"-->
+            <!--android:textSize="20sp" />-->
+
+        <TextView
+            android:id="@+id/tv_item_wallet_bill_details_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="edu"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="元"
+            android:paddingStart="8dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

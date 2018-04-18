@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home_parking_cancel"
+        android:layout_height="match_parent"
+        android:title="取消停车" />
+
+    <item
+        android:id="@+id/menu_home_parking_no"
+        android:title="呼叫车位" />
+
+    <item
+        android:id="@+id/menu_home_parking_navigation"
+        android:title="导航" />
+    <item
+        android:id="@+id/menu_home_parking_start"
+        android:title="降下车锁" />
+
+</menu>

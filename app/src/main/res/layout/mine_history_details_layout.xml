@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/common_diy_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_carport_id"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="车位编号"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_history_details_carport_id_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_history_details_order_id" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_address"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="地址"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_history_details_address_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_history_details_carport_id" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_unpice"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="价格时间"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_history_details_address" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="停车时间"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_history_details_start_time_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline8" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="停车结束"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_history_details_end_time_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_history_details_start_time" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_carport_id_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_history_details_carport_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_history_details_carport_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_history_details_carport_id" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_address_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_history_details_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_history_details_address"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_history_details_address" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_start_time_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_history_details_start_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_history_details_start_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_history_details_start_time" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_end_time_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_history_details_end_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_history_details_end_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_history_details_end_time" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="停车时长"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_history_details_time_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_history_details_end_time" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_time_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_history_details_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_history_details_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_history_details_time" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="收费"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_history_details_pay_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_history_details_time" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_pay_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/uuImportantText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_history_details_pay"
+        app:layout_constraintEnd_toStartOf="@+id/textView38"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_history_details_pay"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_history_details_pay" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_pay_way"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_history_details_pay_way_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_history_details_pay" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_pay_way_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_history_details_pay_way"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_history_details_pay_way"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_history_details_pay_way" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="订单号"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_mine_history_details_order_id_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+    <TextView
+        android:id="@+id/tv_mine_history_details_order_id_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="8dp"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_history_details_order_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_mine_history_details_order_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_history_details_order_id" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <ListView
+        android:id="@+id/lv_mine_history_details_price_time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_history_details_unpice" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:text="元"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mine_history_details_pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_mine_history_details_pay" />
+</android.support.constraint.ConstraintLayout>

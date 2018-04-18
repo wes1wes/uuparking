@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_home_parking_deposit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="@string/charge_amount"
+        android:textColor="@color/uuSecondaryText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_home_parking_deposit"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include3" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_deposit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:gravity="left|center_vertical|end"
+        android:paddingEnd="32dp"
+        android:paddingStart="16dp"
+        android:text="@string/deposit_amount"
+        android:textColor="@color/uuOrangeBtn"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_parking_deposit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_home_parking_deposit_text"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_parking_deposit_text" />
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/common_diy_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_home_parking_deposit_icome"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_charge_method">
+
+        <TextView
+            android:id="@+id/tv_home_parking_deposit_icome"
+            android:layout_width="310dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/uupay"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:text="由由支付" />
+
+        <ImageView
+            android:id="@+id/image_home_parking_deposit_icome"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/radioed" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_home_parking_deposit_alpay"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_home_parking_deposit_icome">
+
+        <TextView
+            android:id="@+id/tv_home_parking_deposit_alipay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/alipay"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:text="@string/alipay" />
+
+        <ImageView
+            android:id="@+id/image_home_parking_deposit_alpay"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/radio" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_home_parking_deposit_wx"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_home_parking_deposit_alpay">
+
+        <TextView
+            android:id="@+id/tv_home_parking_deposit_wx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/wxpay"
+            android:gravity="center_vertical"
+            android:paddingStart="6dp"
+            android:text="@string/wx" />
+
+        <ImageView
+            android:id="@+id/image_home_parking_deposit_wx"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/radio" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_home_parking_deposit"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bg_rectangle_rounded_blue"
+        android:text="@string/pay"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_deposit_orderid"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="订单编号："
+        android:textColor="@color/uuSecondaryText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_home_parking_deposit_orderid_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_deposit_text" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_deposit_orderid_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|start"
+        android:paddingEnd="32dp"
+        android:paddingStart="16dp"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_parking_deposit_orderid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_home_parking_deposit_orderid"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_parking_deposit_orderid"
+        tools:text="0909" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_deposit_time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="停车时长："
+        android:textColor="@color/uuSecondaryText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_home_parking_deposit_time_show"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_deposit_orderid" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_deposit_time_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:height="38dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingEnd="32dp"
+        android:paddingStart="16dp"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_parking_deposit_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_home_parking_deposit_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_parking_deposit_time" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_charge_method"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="计费方式："
+        android:textColor="@color/uuSecondaryText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_home_parking_charge_method_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_parking_deposit_time" />
+
+    <TextView
+        android:id="@+id/tv_home_parking_charge_method_show"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingEnd="32dp"
+        android:paddingStart="16dp"
+        android:text="单价*时间+预约金"
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_home_parking_charge_method"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_home_parking_charge_method"
+        app:layout_constraintTop_toTopOf="@+id/tv_home_parking_charge_method" />
+</android.support.constraint.ConstraintLayout>

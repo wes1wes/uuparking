@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">UUParking</string>
+    <string name="title_home">即时停车</string>
+    <string name="title_appiontment">预约停车</string>
+    <string name="title_control">自用控制</string>
+    <string name="title_mine">个人中心</string>
+    <string name="notifyTitle">权限请求</string>
+    <string name="notifyMsg">权限</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+    <string name="realName">真实姓名</string>
+    <string name="nickHind">输入您的个性名</string>
+    <string name="nicknameToast">请输入您的昵称</string>
+    <string name="isPhoneToast">手机格式不正确</string>
+    <string name="inputSMSCodeToast">请输入验证码！</string>
+    <string name="inputRealNameToast">请输入您的姓名</string>
+    <string name="isIDCardToast">身份证号有误</string>
+    <string name="netNoConnet">网络连接错误！无法请求</string>
+    <string name="smsokToast">验证码已发送</string>
+    <string name="smsmaxToast">操作太频繁，请稍后重试</string>
+    <string name="smsFailToast">发送失败</string>
+    <string name="realNameErrToast">身份证与姓名不相符</string>
+    <string name="realNameFailToast">错误的身份证格式</string>
+    <string name="searchParking_appointment">搜索车位</string>
+    <string name="start_parking_time">开始停车</string>
+    <string name="search_area_apponitment">搜索范围</string>
+    <string name="tv_apply">申请</string>
+    <string name="upload_photo">相关证件</string>
+    <string name="parking_address">车位位置</string>
+    <string name="smsAlreadyExists">该手机号已经被注册，请直接登录！</string>
+    <string name="parkingUseing">车位正被使用</string>
+    <string name="parking_appointing">车位已被预约</string>
+    <string name="parking_unshare">该车位暂未共享</string>
+    <string name="code1">1</string>
+    <string name="pay">支付</string>
+    <string name="wx">微信</string>
+    <string name="alipay">支付宝</string>
+    <string name="charge_amount">收费金额：</string>
+    <string name="deposit_amount">99</string>
+    <string name="inputPhoneNumber">请输入手机号</string>
+    <string name="inputSMSCode">请输入验证码</string>
+    <string name="inputNumber">请输入数字</string>
+    <string name="userHasAppoint">你有一个预约，进入"个人中心-->预约记录"中查看详情</string>
+
+</resources>

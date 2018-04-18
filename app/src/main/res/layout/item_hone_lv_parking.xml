@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_item_home_lv_parking_address"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:ellipsize="start"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="地址"
+        android:textColor="@color/uuImportantText"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/image_item_home_lv_parking_stop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_home_lv_parking_share_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@mipmap/index_info_bg1"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:paddingTop="2dp"
+        android:text="9:00--10:00"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_home_lv_parking_type"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_home_lv_parking_address"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_home_lv_parking_type" />
+
+    <TextView
+        android:id="@+id/tv_item_home_lv_parking_price"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical"
+        android:text="5"
+        android:textColor="@color/uuOrangeBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_home_lv_parking_distance"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/tv_item_home_lv_parking_distance"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="start"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="距离"
+        android:textColor="@color/uuImportantText"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_home_lv_parking_address"
+        app:layout_constraintEnd_toStartOf="@+id/image_item_home_lv_parking_stop"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_home_lv_parking_address"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_home_lv_parking_address"
+        tools:text="43" />
+
+    <TextView
+        android:id="@+id/tv_item_home_lv_parking_type"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@mipmap/index_info_bg2"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:paddingTop="2dp"
+        android:text="时间："
+        android:textColor="@color/liji_c_blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_home_lv_parking_share_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_home_lv_parking_address" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="价格(元/时)："
+        android:textColor="@color/uuImportantText"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_home_lv_parking_price"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_home_lv_parking_address"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_home_lv_parking_type" />
+
+    <ImageView
+        android:id="@+id/image_item_home_lv_parking_stop"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_home_lv_parking_address"
+        app:srcCompat="@mipmap/stop" />
+
+</android.support.constraint.ConstraintLayout>

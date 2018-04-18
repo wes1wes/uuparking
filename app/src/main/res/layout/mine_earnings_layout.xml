@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBabiGray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+  <include layout="@layout/common_diy_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/uuBuleBtn"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_my_earning_come"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:paddingStart="32dp"
+            android:text="车位收益(元)"
+            android:textColor="@color/colorBabiGray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_my_earning_money"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:paddingStart="32dp"
+            android:text="0.00"
+            android:textColor="@color/colorWhite"
+            android:textSize="38sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+       />
+
+    <ListView
+        android:id="@+id/lv_mine_earning_money_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/common_diy_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/lv_my_parking_repair_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"></ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="我们正努力的为你解决问题，请您耐心等候！"
+        android:gravity="center|bottom"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lines="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="如有疑问请及时咨询我们客服"
+        android:gravity="center|top"
+        android:textSize="14sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:lines="1"/>
+
+    <Button
+        android:id="@+id/btn_my_parking_repair_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_button_blue_radius"
+        android:text="咨询客服"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>
